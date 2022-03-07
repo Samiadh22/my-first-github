@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Js WORKSHOP SAMER</title>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="container d-flex ">
+            <div class="row d-flex">Total : <span class="total col" id="total">0</span>$</div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col" data-id="1">
+                  <div class="card">
+                    <img src="https://cdn.shopify.com/s/files/1/0538/9280/8895/products/13133_618e314018b024.13845005_164057C-2.png?v=1636709588" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center"><i class="fa fa-plus-circle" data-title="product1"></i><span id="result" class="number">0</span><i class="fas fa-minus-circle" ></i></h5>
+                      <span class="card-text text-center d-flex">Prix : <span class="price" product_1="1">100</span>$</span>
+                      <input type="hidden" id="price" value="100" data-id="product1" name="product1">
+                      <span class="card-text text-center d-flex icones"><i class="fa fa-heart"></i> <i class="fa fa-trash-alt"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col" data-id="2">
+                  <div class="card">
+                    <img src="https://cdn.shopify.com/s/files/1/0538/9280/8895/products/5375_618cee3da69a25.11590256_CW2288-111-2.png?v=1636790567" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center"><i class="fa fa-plus-circle" data-title="product2"></i><span id="result" class="number">0</span><i class="fas fa-minus-circle" ></i></h5>
+                      <span class="card-text text-center d-flex">Prix : <span class="price" product_2="1">120</span>$</span>
+                      <input type="hidden" id="price" value="120" data-id="product2" name="product2">
+                      <span class="card-text text-center d-flex icones"><i class="fa fa-heart"></i> <i class="fa fa-trash-alt"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col" data-id="3">
+                  <div class="card">
+                    <img src="https://cdn.shopify.com/s/files/1/0538/9280/8895/products/13043_618ccc9ec686a5.54180491_FX7519_2_58b98161-910d-4f14-9506-0e6204a555e7.png?v=1636627709" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center"><i class="fa fa-plus-circle" data-title="product3"></i><span id="result" class="number">0</span><i class="fas fa-minus-circle" ></i></h5>
+                      <span class="card-text text-center d-flex">Prix : <span class="price" product_3="1">80</span>$</span>
+                      <input type="hidden" id="price" value="80" data-id="product3" name="product">
+                      <span class="card-text text-center d-flex icones"><i class="fa fa-heart"></i> <i class="fa fa-trash-alt"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </main>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
